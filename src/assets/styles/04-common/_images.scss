@@ -1,0 +1,60 @@
+.has-js {
+    .lazy-image {
+        &--pending {
+            min-height: 100px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            outline: none;
+
+            & img {
+                filter: blur(2vw);
+                transform: scale(1.05);
+            }
+        }
+
+        &--loaded {
+            min-height: 100px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            outline: none;
+        }
+
+        &__actual {
+            position: absolute;
+            left: 0;
+            top: 0;
+            will-change: transform, opacity;
+        }
+
+        &__content {
+
+        }
+
+        & img {
+            display: block;
+            width: 100%;
+            max-width: none;
+            height: auto;
+            border: 0 none;
+        }
+    }
+}
+
+.no-js {
+    .no-js-fallback {
+        position: relative;
+
+        & .lazy-image {
+            @include opacity(0);
+        }
+
+        & .split-block__image {
+        }
+    }
+}
+
+.fade-in {
+    @include animation(reveal 1.2s ease('fluid'));
+}

@@ -1,0 +1,40 @@
+{
+  "name": "LiqiudSpace",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --env=dev",
+    "build:prod": "rm -rf build && webpack --progress --colors -p --env=prod",
+    "build:dev": "webpack --progress --colors -d --env=dev",
+    "update:packages": "rm -rf node_modules && npm update --save-dev && npm update --save"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.15.3",
+    "eslint-loader": "^2.2.1",
+    "file-loader": "^3.0.1",
+    "image-webpack-loader": "^4.6.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "resolve-url-loader": "^3.0.1",
+    "sass-globbing": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "semistandard": "^13.0.1",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.2.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}

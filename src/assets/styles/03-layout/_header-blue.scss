@@ -1,0 +1,66 @@
+.header-blue {
+  background-color: #00293a;
+  padding: 30px 0;
+  font-weight: bold;
+  z-index: $z-header;
+
+  &__logo {
+    margin-bottom: -4px;
+  }
+
+  &__link-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 35px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+
+    &:first-of-type::after {
+      content: "";
+      display: inline-block;
+      margin-left: 6px;
+      width: 12px;
+      height: 9px;
+      background-image: url("https://f.hubspotusercontent10.net/hubfs/9346563/Liquid/Header%20Blue%20Icons/dropdown.svg");
+      @include transition(transform 0.2s ease("fluid"));
+    }
+
+    &:first-of-type:hover::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__link-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 382px;
+    height: 448px;
+    border-radius: 8px;
+    background-color: #00293a;
+    border: 1px solid #204d58;
+    z-index: $z-header;
+  }
+
+  &__link:hover + &__link-menu,
+  &__link-menu:hover {
+    display: block;
+  }
+
+  &__subscribe {
+    color: #00293a;
+    background-color: #a1ded2;
+    border-color: #a1ded2;
+  }
+
+  &__get-in-touch {
+    margin-left: 40px;
+    color: #fff;
+    border-color: #a1ded2;
+  }
+}

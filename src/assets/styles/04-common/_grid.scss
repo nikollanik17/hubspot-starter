@@ -1,0 +1,32 @@
+.contain-grid {
+  padding-left: $contained-grid-padding;
+  padding-right: $contained-grid-padding;
+}
+
+@media screen and (max-width: breakpoint(xl)) {
+  .contain-grid {
+    padding-left: fluid-unit(1679px, 1440px, $contained-grid-padding, 75px);
+    padding-right: fluid-unit(1679px, 1440px, $contained-grid-padding, 75px);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contain-grid {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media screen and (max-width: breakpoint(mb)) {
+  .contain-grid {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media screen and (max-width: breakpoint(sm)) {
+  .contain-grid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

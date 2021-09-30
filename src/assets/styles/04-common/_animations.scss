@@ -1,0 +1,13 @@
+// Name: Reveal
+// Summary: Fade in + Scale down
+
+@include keyframes(reveal) {
+    0% {
+        @include transform(scale(1.05));
+        @include opacity(0);
+    }
+    100% {
+        @include transform(scale(1));
+        @include opacity(1);
+    }
+}

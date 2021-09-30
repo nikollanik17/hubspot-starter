@@ -1,0 +1,1 @@
+Third party styles that belong to plugins (e.g. Slick, Swiper, JQuery) go here. 
