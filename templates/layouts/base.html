@@ -17,16 +17,11 @@
   </head>
   <body>
     <div class="body-wrapper {{ builtin_body_classes }}">
-      {% block header %}
-        {% global_partial path='../partials/header-blue.html' %}
-      {% endblock header %}
-
+		
       {% block body %}
+				
       {% endblock body %}
 
-      {% block footer %}
-        {% global_partial path='../partials/footer.html' %}
-      {% endblock footer %}
     </div>
     {{ require_js(get_asset_url('../../build/assets/js/main.bundle.js')) }}
     {# To see a full list of what is included via standard_footer_includes please reference this article: https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables #}
