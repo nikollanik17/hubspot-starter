@@ -15,19 +15,4 @@ const includeComponent = (script) => require(`./assets/scripts/components/${scri
  */
 
 // ----------- Custom scripts ---------------
-includeComponent('header');
-// includeComponent('imageSlider');
-// includeComponent('countUp');
-// includeComponent('slider');
-// includeComponent('accordion');
-// includeComponent('map');
-// includeComponent('header');
-// includeComponent('changeList');
-// includeComponent('contentSlider');
-// includeComponent('imageZoom');
-// includeComponent('resource');
-// includeComponent('checklist');
-// includeComponent('benefits');
-// includeComponent('categorySlider');
-// includeComponent('globalAnimations');
-// includeComponent('boxImage');
+includeComponent('slider');
