@@ -12,22 +12,36 @@
 
 $grid-breakpoints: (
   xs: 0,
-  // sm: 576px,
-  md: 768px,
-  lg: 1440px,
-  xl: 1920px,
+  sm: 576px,
+  mb: 768px,
+  md: 992px,
+  lg: 1280px,
+  xl: 1400px,
 ) !default;
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function breakpoint($key) {
+  $bp: strip-unit(map-get($grid-breakpoints, $key));
+  @return #{$bp - 1}px;
+}
+
+@function breakpointContainerWidth($res, $margin, $gutter-width) {
+  @return ($res - ($margin * 2)) + $gutter-width;
+}
 
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  // sm: 540px,
-  // md: 720px,
-  // lg: 960px,
-  lg: 1200px,
-  xl: 1600px
+  sm: 540px,
+  mb: 720px,
+  md: 960px,
+  lg: 1230px,
+  xl: 1380px,
 ) !default;
 
 // Grid columns
@@ -35,7 +49,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 16px !default;
+$grid-gutter-width: 60px !default;
 
 $grid-margin: 180 !default;
 $grid-column-padding: ($grid-gutter-width / 2);
@@ -52,10 +66,10 @@ $contained-grid-padding: ($grid-margin - $grid-column-padding);
 @import "layout/mixins/visibility";
 @import "layout/utilities/visibility";
 
-@media (min-width: map-get($grid-breakpoints, xs)) and (max-width: map-get($grid-breakpoints, md)) {
-  .row > .col,
-  .row > [class*="col-"] {
-    padding-right: 16px;
-    padding-left: 16px;
-  }
-}
+// @media (min-width: map-get($grid-breakpoints, xs)) and (max-width: map-get($grid-breakpoints, md)) {
+//   .row > .col,
+//   .row > [class*="col-"] {
+//     padding-right: 16px;
+//     padding-left: 16px;
+//   }
+// }
