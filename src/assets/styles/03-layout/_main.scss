@@ -14,7 +14,13 @@ body {
   @include box-sizing(border-box);
 }
 
-p,h1,h2,h3,h4,h5,h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -23,10 +29,16 @@ p,h1,h2,h3,h4,h5,h6 {
   margin-top: 175px;
 }
 
-.not-padded{
-  padding:0;
+main {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
+.not-padded {
+  padding: 0;
+}
 
 .background-black .newsletter__form {
   .gform_wrapper
@@ -38,5 +50,3 @@ p,h1,h2,h3,h4,h5,h6 {
     border-color: #818488;
   }
 }
-
-
