@@ -1,29 +1,29 @@
 {
-    "eslint.alwaysShowStatus": true,
-    "editor.formatOnSave": true,
-    "files.eol": "\r\n",
-    "files.associations": {
-        "*.html": "html-hubl", 
-        // "*.css": "css-hubl"
-    },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "eslint.format.enable": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    }
+  "eslint.alwaysShowStatus": true,
+  "editor.formatOnSave": true,
+  "files.eol": "\r\n",
+  "files.associations": {
+    "*.html": "html-hubl"
+    // "*.css": "css-hubl"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "eslint.format.enable": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  }
 }
